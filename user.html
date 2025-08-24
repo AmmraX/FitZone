@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="home.php">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="trainers.html">Our Trainers</a>
+            <a href="membership.html">Membership Plans</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
+    </header>
+
+    <section class="user-dashboard">
+        <div class="user-dashboard-container">
+            <div class="user-header">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="user-details">
+                        <h2>Welcome, <span id="user-name">User</span>!</h2>
+                        <p>Member since <span id="member-since">January 2025</span></p>
+                    </div>
+                </div>
+                <div class="membership-badge">
+                    Standard Membership
+                </div>
+                <a href="home.php" class="logout-btn">
+                    <i class='bx bx-log-out'></i> Logout
+                </a>
+            </div>
+            
+            <div class="user-content">
+                <div class="user-card">
+                    <h3><i class='bx bx-calendar'></i> Fitness Progress</h3>
+                    <p>Your monthly goal completion</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                    <p>75% completed</p>
+                    <div class="quick-actions">
+                        <button class="mem-btn">Log Workout</button>
+                        <button class="mem-btn">Set New Goal</button>
+                    </div>
+                </div>
+                
+                <div class="user-card">
+                    <h3><i class='bx bx-calendar-event'></i> Upcoming Classes</h3>
+                    <div class="upcoming-classes">
+                        <div class="class-item">
+                            <span>Yoga Class</span>
+                            <span>Apr 21, 7:00 AM</span>
+                        </div>
+                        <div class="class-item">
+                            <span>HIIT Training</span>
+                            <span>Apr 22, 6:30 PM</span>
+                        </div>
+                        <div class="class-item">
+                            <span>Strength Training</span>
+                            <span>Apr 24, 8:00 AM</span>
+                        </div>
+                    </div>
+                    <div class="quick-actions">
+                        <button class="mem-btn">Book Class</button>
+                        <button class="mem-btn">My Schedule</button>
+                    </div>
+                </div>
+                
+                <div class="user-card">
+                    <h3><i class='bx bx-dumbbell'></i> Fitness Stats</h3>
+                    <div class="stats">
+                        <div class="class-item">
+                            <span>Workouts this month</span>
+                            <span>12</span>
+                        </div>
+                        <div class="class-item">
+                            <span>Average duration</span>
+                            <span>45 mins</span>
+                        </div>
+                        <div class="class-item">
+                            <span>Calories burned</span>
+                            <span>8,540</span>
+                        </div>
+                        <div class="class-item">
+                            <span>Classes attended</span>
+                            <span>6</span>
+                        </div>
+                    </div>
+                    <div class="quick-actions">
+                        <button class="mem-btn">All Stats</button>
+                        <button class="mem-btn"> Export Data</button>
+                    </div>
+                </div>
+                
+                <div class="user-card">
+                    <h3><i class='bx bx-user'></i> My Account</h3>
+                    <div class="stats">
+                        <div class="class-item">
+                            <span>Membership</span>
+                            <span>Standard</span>
+                        </div>
+                        <div class="class-item">
+                            <span>Renewal date</span>
+                            <span>May 20, 2025</span>
+                        </div>
+                        <div class="class-item">
+                            <span>Payment method</span>
+                            <span>Visa ****1234</span>
+                        </div>
+                    </div>
+                    <div class="quick-actions">
+                        <button class="mem-btn"> Edit Profile</button>
+                        <button class="mem-btn">Billing</button>
+                    </div>
+                </div>
+                
+                <div class="user-card full-width">
+                    <h3><i class='bx bx-bell'></i> Notifications</h3>
+                    <div class="upcoming-classes">
+                        <div class="class-item">
+                            <span>New Yoga class added to the schedule</span>
+                            <span>2 hours ago</span>
+                        </div>
+                        <div class="class-item">
+                            <span>Your trainer has added a new workout plan</span>
+                            <span>Yesterday</span>
+                        </div>
+                        <div class="class-item">
+                            <span>April fitness challenge starts next week</span>
+                            <span>2 days ago</span>
+                        </div>
+                    </div>
+                    <button class="mark-btn"> Mark All as Read</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

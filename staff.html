@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="home.php">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="trainers.html">Our Trainers</a>
+            <a href="membership.html">Membership</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
+    </header>
+
+    <div class="staff-dashboard">
+        <div class="staff-container">
+            <div class="staff-header">
+                <div class="staff-info">
+                    <div class="staff-avatar">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="staff-details">
+                        <h2>Staff Member</h2>
+                        <p>Staff ID: ST-2023-42</p>
+                    </div>
+                </div>
+                <div class="staff-actions">
+                    <a href="home.php" class="stlogout-btn">
+                        <i class='bx bx-log-out'></i> LOGOUT
+                    </a>
+                </div>
+            </div>
+
+            <div class="staff-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bx-user-plus'></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>New Members</h3>
+                        <p class="number">24</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bx-calendar-check'></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Classes Today</h3>
+                        <p class="number">8</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bx-dumbbell'></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Active Sessions</h3>
+                        <p class="number">12</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bx-task'></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Tasks</h3>
+                        <p class="number">7</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-content">
+                <div class="tasks-section">
+                    <h2><i class='bx bx-list-check'></i> Today's Tasks</h2>
+                    <div class="task-list">
+                        <div class="task-item">
+                            <div class="task-checkbox">
+                                <input type="checkbox" id="task1">
+                                <label for="task1"></label>
+                            </div>
+                            <div class="task-details">
+                                <h4>Morning equipment check</h4>
+                                <p>8:00 AM - Check all equipment for safety</p>
+                            </div>
+                            <div class="task-status pending">Pending</div>
+                        </div>
+                        <div class="task-item">
+                            <div class="task-checkbox">
+                                <input type="checkbox" id="task2">
+                                <label for="task2"></label>
+                            </div>
+                            <div class="task-details">
+                                <h4>Assist with Yoga Class</h4>
+                                <p>10:30 AM - Help trainer with equipment setup</p>
+                            </div>
+                            <div class="task-status pending">Pending</div>
+                        </div>
+                        <div class="task-item">
+                            <div class="task-checkbox">
+                                <input type="checkbox" id="task3" checked>
+                                <label for="task3"></label>
+                            </div>
+                            <div class="task-details">
+                                <h4>New member orientation</h4>
+                                <p>9:15 AM - Guide new members through facilities</p>
+                            </div>
+                            <div class="task-status completed">Completed</div>
+                        </div>
+                        <div class="task-item">
+                            <div class="task-checkbox">
+                                <input type="checkbox" id="task4">
+                                <label for="task4"></label>
+                            </div>
+                            <div class="task-details">
+                                <h4>Membership renewals follow-up</h4>
+                                <p>2:00 PM - Call members with expiring memberships</p>
+                            </div>
+                            <div class="task-status pending">Pending</div>
+                        </div>
+                    </div>
+                    <button class="add-task-btn"><i class='bx bx-plus'></i> Add New Task</button>
+                </div>
+
+                <div class="class-schedule">
+                    <h2><i class='bx bx-calendar'></i> Today's Classes</h2>
+                    <div class="class-list">
+                        <div class="class-item">
+                            <div class="class-time">6:00 AM - 7:00 AM</div>
+                            <div class="class-info">
+                                <h4>Morning HIIT</h4>
+                                <p>Trainer: John Smith</p>
+                            </div>
+                            <div class="class-status">15/20</div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">9:00 AM - 10:00 AM</div>
+                            <div class="class-info">
+                                <h4>Yoga Basics</h4>
+                                <p>Trainer: Emily Johnson</p>
+                            </div>
+                            <div class="class-status">12/15</div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">12:00 PM - 1:00 PM</div>
+                            <div class="class-info">
+                                <h4>Lunchtime Express</h4>
+                                <p>Trainer: Mike Peterson</p>
+                            </div>
+                            <div class="class-status">8/15</div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">5:30 PM - 6:30 PM</div>
+                            <div class="class-info">
+                                <h4>Spin Class</h4>
+                                <p>Trainer: Sarah Williams</p>
+                            </div>
+                            <div class="class-status">20/20</div>
+                        </div>
+                    </div>
+                    <button class="view-all-btn">View Full Schedule</button>
+                </div>
+            </div>
+
+            <div class="recent-activity">
+                <h2><i class='bx bx-history'></i> Recent Activity</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class='bx bx-user-plus'></i>
+                        </div>
+                        <div class="activity-details">
+                            <p><strong>New member registration:</strong> Alex Thompson completed registration</p>
+                            <span class="activity-time">10 minutes ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class='bx bx-calendar-check'></i>
+                        </div>
+                        <div class="activity-details">
+                            <p><strong>Class booking:</strong> 3 new bookings for Evening Yoga</p>
+                            <span class="activity-time">25 minutes ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class='bx bx-credit-card'></i>
+                        </div>
+                        <div class="activity-details">
+                            <p><strong>Payment received:</strong> James Wilson renewed Premium membership</p>
+                            <span class="activity-time">1 hour ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class='bx bx-message-square-detail'></i>
+                        </div>
+                        <div class="activity-details">
+                            <p><strong>New inquiry:</strong> Message about personal training</p>
+                            <span class="activity-time">2 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-actions-section">
+                <h2><i class='bx bx-rocket'></i> Quick Actions</h2>
+                <div class="quick-actions">
+                    <button class="action-btn"><i class='bx bx-user-plus'></i> Register New Member</button>
+                    <button class="action-btn"><i class='bx bx-calendar-plus'></i> Schedule Class</button>
+                    <button class="action-btn"><i class='bx bx-message-square-detail'></i> Send Announcement</button>
+                    <button class="action-btn"><i class='bx bx-file'></i> Generate Report</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
